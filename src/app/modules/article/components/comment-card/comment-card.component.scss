@@ -1,0 +1,40 @@
+.comment-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin: 1rem;
+  }
+  
+  .avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 10px;
+  }
+  
+  .username {
+    font-weight: bold;
+    margin-top: 0.75rem;
+  }
+  
+  .comment-content {
+    margin: 10px 0;
+  }
+  
+  .comment-date {
+    margin-left: 0.5rem;
+  }
+  
+  .like-dislike-buttons {
+    position: relative;
+    bottom: 0;
+    right:0;
+  }
+
+  mat-card-actions{
+    display: flex;
+    justify-content: space-between;
+  }
+  

@@ -1,0 +1,6 @@
+
+    <h1>Discover Articles From All the World!</h1>
+    <div class="article-container">
+        <article-card *ngFor="let article of articles" [article]="article" (click)="onArticleClick(article.id)"/>
+    </div>
+

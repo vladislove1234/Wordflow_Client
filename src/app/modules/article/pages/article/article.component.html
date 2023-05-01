@@ -1,0 +1,33 @@
+
+    <div class="container">
+    <div class="container article-container" id="article-container">
+        <h1 class="text-start m-5" id="article_title">Hi All!</h1>
+        <p class="fs-5" id="article_content">{{lorem}}</p>
+        <h1 class="text-start m-5" id="article_title">Second</h1>
+        <p class="fs-5" id="article_content">{{lorem}}</p>
+        <h1 class="text-start m-5" id="article_title">Third</h1>
+        <p class="fs-5" id="article_content">{{lorem}}</p>
+        <h1 class="text-start m-5" id="article_title">Conclusion</h1>
+        <p class="fs-5" id="article_content">{{lorem}}</p>
+    </div>
+
+    <div class="container d-flex">
+      <div class="container mb-2 align-items-end" style="display: flex; flex-direction: row; justify-content: start;">
+          <img src="https://github.com/mdo.png"
+          class="rounded-circle col-md-auto m-0 avatar-image">
+          <div style="margin-left: 12px;">
+            <label class="d-flex text-end">Vlad Taraban</label>
+            <label class="d-flex text-secondary fs-6">15 mins ago</label>
+          </div>
+      </div>
+    </div>
+
+    <h2 class="text-center m-5">Comments</h2>
+
+    <div class="comment-widgets">
+      <app-post-comment/>
+      <app-comment-card/>
+      <app-comment-card/>
+      <app-comment-card/>
+      <app-comment-card/>
+  </div> 

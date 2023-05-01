@@ -1,0 +1,30 @@
+<!-- login.component.html -->
+<div class="login-container">
+  <h1 class="login-header">Sign In</h1>
+
+  <form [formGroup]="loginForm" (ngSubmit)="login()" class="login-form">
+    <mat-form-field>
+      <mat-label>Username</mat-label>
+      <input matInput formControlName="username" required autocomplete="off">
+      <mat-error *ngIf="loginForm.controls['username'].invalid">
+        Please enter a valid username.
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input matInput type="password" formControlName="password" required autocomplete="off">
+      <mat-error *ngIf="loginForm.controls['password'].invalid">
+        Please enter a valid password.
+      </mat-error>
+    </mat-form-field>
+
+    <div class="sign-up-text">
+      Don't have an account? <a (click)="goToRegister()">Sign up</a>
+    </div>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">
+      Login
+    </button>
+  </form>
+</div>

@@ -1,0 +1,16 @@
+<div class="content-container mt-4 mb-4">
+    <div class="row justify-content-md-center">
+      <div class="col-md-12 col-lg-8">
+        <h1 class="h2 mb-4">Create your Article!</h1>
+        <div class="name-input">
+          <mat-form-field>
+            <input matInput placeholder="Name of Article">
+          </mat-form-field>
+        </div>
+        <div class="editor-container">
+            <ckeditor [editor]="Editor" data="<p>Hello, world!</p>"></ckeditor>
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Upload</button>
+      </div>
+    </div>
+  </div>
