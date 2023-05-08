@@ -1,4 +1,4 @@
-#About Project
+# About Project
 It's my site made in context of University Web Applications Course.
 
 # WordFlowApp
